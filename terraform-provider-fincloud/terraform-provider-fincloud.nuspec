@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>terraform-provider-fincloud</id>
+    <title>Terraform provider for Financial Cloud</title>
+    <version>1.0.0</version>
+    <authors>Park MinKeun</authors>
+    <owners>P.Elley</owners>
+    <summary>Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions.</summary>
+    <description>
+Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions.
+    </description>
+    <releaseNotes>
+## 1.0.0 (April 21, 2020)
+
+NOTE:
+
+- Major Release Version: Version 1.0 of Financial Cloud Provider is a major version.
+- Terraform 0.12: You must upgrade to Terraform 0.12 to use version 1.0 of the Financial Cloud Provider
+
+FEATURES:
+
+- **New Resource:** `fincloud_virtual_private_cloud`
+- **New Resource:** `fincloud_network_acl`
+- **New Resource:** `fincloud_network_acl_rule`
+- **New Resource:** `fincloud_subnet`
+- **New Resource:** `fincloud_region`
+- **New Resource:** `fincloud_zone`
+- **New Resource:** `fincloud_server`
+- **New Resource:** `fincloud_storage`
+- **New Resource:** `fincloud_network_interface`
+- **New Resource:** `fincloud_public_ip`
+- **New Resource:** `fincloud_security_group`
+- **New Resource:** `fincloud_security_group_rule`
+- **New Resource:** `fincloud_init_script`
+- **New Resource:** `fincloud_login_key`
+
+IMPROVEMENTS:
+
+- Change the overall directory structure with reference to [terraform-provider-azurerm](https://github.com/terraform-providers/terraform-provider-azurerm)
+    </releaseNotes>
+    <projectUrl>https://github.com/samjegal/terraform-provider-fincloud</projectUrl>
+    <docsUrl>https://www.terraform.io/docs/index.html</docsUrl>
+    <bugTrackerUrl>https://github.com/samjegal/terraform-provider-fincloud/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/samjegal/terraform-provider-fincloud</projectSourceUrl>
+    <packageSourceUrl>https://github.com/samjegal/chocolatey-fincloud</packageSourceUrl>
+    <tags>terraform provider</tags>
+    <copyright>Park MinKeun 2020</copyright>
+    <licenseUrl>https://github.com/samjegal/terraform-provider-fincloud/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/jamestoyer/chocolatey-packages/58ab86c08224c2ba79af2080346c53c1cc440afc/terraform/icons/terraform.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
