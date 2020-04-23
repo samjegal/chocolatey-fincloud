@@ -51,6 +51,9 @@ IMPROVEMENTS:
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/jamestoyer/chocolatey-packages/58ab86c08224c2ba79af2080346c53c1cc440afc/terraform/icons/terraform.png</iconUrl>
   </metadata>
+  <dependencies>
+    <dependency id="terraform" version="0.12.24"/>
+  </dependencies>
   <files>
     <file src="tools\**" target="tools"/>
   </files>
