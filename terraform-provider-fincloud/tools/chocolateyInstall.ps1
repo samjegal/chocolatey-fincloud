@@ -4,8 +4,8 @@ $ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 Import-Module -Force "$toolsDir\helpers.psm1"
 
-$checksum64 = '2079c6b841ff32a9d6b6b377ddc27c58ba082d4832a987ee920c96b6d5ac4918'
-$version = '1.0.0'
+$checksum64 = '0d102439524c5de530e30b21aadd049d843c353a88bbe565aa65834200962eaf'
+$version = '1.0.1'
 $url64bit = "https://github.com/samjegal/terraform-provider-fincloud/releases/download/v$($version)/terraform-provider-fincloud.windows.zip"
 
 $terraformPluginDirectory = Get-TerraformPluginDirectory
